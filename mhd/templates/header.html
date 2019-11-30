@@ -1,0 +1,12 @@
+{% load static %}
+
+<div class="navbar">
+    <a href="{% url 'homepage' %}">
+        <img src="{% static 'assets/mhd.png' %}" alt="mhd">
+    </a>
+    <div class="navigations">
+        <a href="{% url 'homepage' %}#about">about</a>
+        <a href="{% url 'homepage' %}#experience">experience</a>
+        <a href="{% url 'homepage' %}#contact">contact</a>
+    </div>
+</div>

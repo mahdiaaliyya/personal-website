@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+body h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+body p {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 20px;
+}
+
+body button {
+    outline: none;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;    
+    z-index: 5;
+}
+
+.navbar > a > img {
+    height: 34px;
+    margin-left: 32px;
+    text-align: center;
+}
+
+.navigations > a {
+    color: black;
+    text-decoration: none;
+    padding: 4px 4px;
+    font-size: 18px;
+    margin: 14px 24px;
+}
+
+@media only screen and (max-width: 700px) {
+    .navigations > a {
+        margin: 14px 0px 14px 10px;
+    }
+}
+
+.navigations > a:hover, .navigations > a.active, .navigations > a:focus {
+    border-bottom: 2px solid #AD5B7C;
+}
+
+.icon-horizontal button {
+    font-size: 21px;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    margin-right: 18px;
+    padding: 0;
+    outline: none;
+}
+
+/* Home */
+#home {
+    padding: 70px 168px 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home > div {
+    display: flex;
+    flex-direction: row;
+}
+
+#home button {
+    outline: none;
+}
+
+.profile-photo {
+    width: 430px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.profile-photo > img {
+    width: 430px;
+    margin-top: -160px;
+}
+
+
+.title {
+    margin-top: 118px;
+    padding-left: 32px;
+}
+
+.title h1 {
+    font-size: 62px;
+    font-weight: bold;  
+}
+
+.title button {
+    margin-top: 34px; 
+    padding: 10px 34px;
+    border-radius: 22px;
+    border: solid 1px black;
+    background-color: white;
+}
+
+.title button:hover {
+    border: solid 1px #AD5B7C;
+    background-color: #AD5B7C; 
+    color: white;
+}
+
+.button-scroll-down {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 25px;
+}
+
+.button-container > button {
+    background-color: #AD5B7C;
+}
+.button-container > button:hover {
+    background-color: #9D4567;
+}
+
+.button-scroll-down i {
+    font-size: 36px;
+    color: white;
+}
+
+.icon-vertical {
+    position: absolute;
+    right: 40px;
+}
+
+.icon-vertical button {
+    font-size: 21px;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 18px;
+    padding: 0;
+    outline: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .profile-photo {
+        width: 100%;
+        max-height: 420px;
+        overflow: hidden;
+    }
+
+    .profile-photo > img {
+        width: 100vw;
+        margin-top: -160px;
+    }
+}
+
+/* Content */
+.content {
+    padding: 96px 168px;
+}
+
+.container {
+    z-index: -5;
+}
+
+.content h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.container h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.dark-bg {
+    background-color: #AD5B7C;
+}
+
+/* About */
+#about {
+    background-color: #AD5B7C;
+    color: white;
+    padding: 96px 169px;
+}
+
+@media only screen and (max-width: 700px) {
+    #about {
+        padding: 75px 15px;
+    }
+}
+
+#about.container {
+    margin: 0;
+
+}
+
+#about p {
+    max-width: 723px;
+}
+
+/* Experience */
+#experience {
+    display: flex;
+    align-items: center;
+    padding: 96px 169px;
+}
+
+@media only screen and (max-width: 700px) {
+    #experience {
+        padding: 75px 15px;
+    }
+}
+
+
+.experience-container ul {
+    max-width: 420px;
+    list-style-type: none;
+    border-left: solid 3px #AD5B7C;
+}
+
+.experience-container {
+    justify-content: center;
+}
+
+/* Contact */
+#contact {
+    background-color: #AD5B7C;
+    color: white;
+    padding: 96px 169px;
+}
+
+.form-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form-container button {
+    right: 0px;
+}
+
+.form-container form input {
+    font-family: 'Red Hat Text', sans-serif;
+    padding: 9px 14px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.form-container form textarea {
+    font-family: 'Red Hat Text', sans-serif;
+    padding: 9px 14px;
+    width: 100%;
+    height: 178px;
+    text-align: top;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+    #contact {
+        padding: 75px 35px;
+    }
+
+    .form-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+}
+
+#submit-btn {
+    padding: 8px 47px;
+    border-radius: 26px;
+    border: solid 3px white;
+    color: white;
+    background-color: #AD5B7C;
+}
+
+.button-scroll-up {
+    position: absolute;
+    bottom: 90px;
+    right: 40px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: solid 3px black;
+}
+
+.button-scroll-up-container > button {
+    background-color: #AD5B7C;
+}
+.button-scroll-up-container > button:hover {
+    background-color: #9D4567;
+}
+
+.button-scroll-up i {
+    font-size: 34px;
+    color: black;
+}
+
+/* Blog */
+#blog h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-left: 70px;
+}
+.blog-content {
+    padding: 50px 70px;
+}
+
+.blog-content > a {
+    color: black;
+}
+.blog-preview {
+    background-color: white;
+    min-width: 30%;
+    margin-bottom: 20px;
+}
+
+.preview-pic {
+    height: 50%;
+}
+.blog-preview img {
+    width: 100%;
+    height: 100%;
+}
+
+.preview-text {
+    height:50%;
+    padding:10%;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.preview-text p, .preview-text a {
+    font-size: 14px;
+}
+
+/* Schedule */
+#schedule {
+    background-color: #AD5B7C;
+    height: 100%;
+    padding: 15vmin;
+}
+
+#schedule h2, #schedule h3 {
+    color: white;
+}
+
+#schedule h4 {
+    margin: 0;
+}
+
+#schedule p {
+    margin: 0;
+}
+
+#schedule > div:first-of-type{
+    margin-bottom: 16px;
+}
+
+#schedule-form {
+    background-color: white;
+    padding: 8px;
+}
+
+
+#schedule-form label{
+    margin-right:4px;
+}
+
+#schedule-form input {
+    border: none;
+    outline: none;
+}
+
+#schedule-form input:active{
+    border-bottom: solid solid 2px #AD5B7C;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 16px;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.event-card .delete-button {
+    margin-left: 16px;
+    background-color: transparent;
+    border: none;
+    width: 17px;
+    height: 17px;
+    /* border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    line-height: 0%;
+    background-color: #C4C4C4; */
+}
+
+.right-side-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
