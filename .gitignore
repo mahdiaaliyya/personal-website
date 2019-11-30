@@ -1,3 +1,5 @@
 staticfiles/
 __pycache__/
 env/
+settings.ini
+db.sqlite3
